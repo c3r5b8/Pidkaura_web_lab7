@@ -94,12 +94,12 @@ window.onload = function () {
     let min = document.cookie.split(';').find((item) => item.trim().startsWith('min='));
 
     if (max || min) {
-        let saveData = confirm("Ви хочете зберегти дані з куків? " + max +  min);
+        let saveData = confirm("Ви хочете зберегти дані з куків? " + max + min);
         if (saveData) {
             alert("Куки збережено. Будь ласка, перезавантажте сторінку.");
         } else {
-            document.cookie = "max=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-            document.cookie = "min=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            document.cookie = "max=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/Pidkaura_web_lab7";
+            document.cookie = "min=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/Pidkaura_web_lab7";
             location.reload();
         }
     }
