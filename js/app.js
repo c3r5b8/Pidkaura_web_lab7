@@ -98,8 +98,8 @@ window.onload = function () {
         if (saveData) {
             alert("Куки збережено. Будь ласка, перезавантажте сторінку.");
         } else {
-            document.cookie = "max=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/Pidkaura_web_lab7";
-            document.cookie = "min=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/Pidkaura_web_lab7";
+            document.cookie = "max=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+            document.cookie = "min=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
             location.reload();
         }
     }
